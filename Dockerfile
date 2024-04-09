@@ -16,7 +16,7 @@ COPY src src
 RUN ./mvnw package -DskipTests
 
 # Stage 2: Create the Docker image
-FROM adoptopenjdk/openjdk17:alpine-slim
+FROM openjdk:17-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
