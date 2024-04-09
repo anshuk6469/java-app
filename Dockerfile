@@ -1,5 +1,5 @@
 # Stage 1: Build the Spring Boot application
-FROM adoptopenjdk/openjdk17:alpine as builder
+FROM maven:3.8.4-openjdk-17-slim as builder
 
 # Set the working directory inside the container
 WORKDIR /app
