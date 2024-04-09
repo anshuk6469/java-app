@@ -13,7 +13,7 @@ COPY pom.xml .
 COPY src src
 
 # Build the application
-RUN ./mvnw package -DskipTests
+RUN ./mvn package -DskipTests
 
 # Stage 2: Create the Docker image
 FROM openjdk:17-alpine
