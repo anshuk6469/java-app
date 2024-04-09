@@ -22,7 +22,7 @@ FROM openjdk:17-alpine
 WORKDIR /app
 
 # Copy the packaged Spring Boot application JAR file from the previous stage
-COPY --from=builder /app/target/demo.jar /app/demo.jar
+COPY --from=builder /app/target/demo-1.jar /app/demo.jar
 
 # Expose the port on which the Spring Boot application will run
 EXPOSE 8080
