@@ -28,9 +28,9 @@ COPY --from=builder /app/target/demo-1.jar /app/demo.jar
 EXPOSE 8080
 
 # Define environment variables (optional)
-ENV ENVIRONMENT=production
-ENV DATABASE_URL=jdbc:mysql://localhost:3306/db_name
-ENV NAMES="deep,john,stanley"
+ENV ENVIRONMENT
+ENV DATABASE_URL
+ENV NAMES
 
 # Specify any volume for persistence (optional)
 VOLUME /app/data
